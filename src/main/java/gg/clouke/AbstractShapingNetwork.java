@@ -26,7 +26,7 @@ public class AbstractShapingNetwork {
   }
 
   /**
-   * Predicts the probabilities of the given vector
+   * Performs a prediction on the given input vector and returns the probabilities for each layer
    *
    * @param vector The input vector to predict the probabilities of
    * @return Returns an array of probabilities for each layer
