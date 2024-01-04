@@ -11,7 +11,7 @@ public interface ShapingFunction {
    * Performs the shaping function on the given node, n and w
    *
    * @param node The node to perform the shaping function on
-   * @param n The amount this neuron has been shaped
+   * @param n The amount of times this neuron has been shaped
    * @param w The context vector to shape the neuron with
    * @return Returns the shaped context vector
    */

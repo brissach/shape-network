@@ -57,7 +57,7 @@ public class Neuron {
    * Shapes the weights of this neuron
    *
    * @param y The context vector to shape the weights with
-   * @param n The amount this neuron has been shaped
+   * @param n The amount of times this neuron has been shaped
    */
   public void shape(ContextVector y, int n) {
     shapeVector = shapingFunction.apply(
@@ -97,9 +97,9 @@ public class Neuron {
   }
 
   /**
-   * Gets the amount this neuron has been shaped
+   * Gets The amount of times this neuron has been shaped
    *
-   * @return Returns the amount this neuron has been shaped
+   * @return Returns The amount of times this neuron has been shaped
    */
   public int numShapes() {
     return numShapes;
