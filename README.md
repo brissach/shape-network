@@ -45,7 +45,7 @@ int epochs = 100;
 for (int i = 0; i < epochs; i++) {
   for (Map.Entry<Integer, List<ContextVector>> entry : trainingData.entrySet()) {
     for (ContextVector vector : entry.getValue())
-      ml.feed(vector, entry.getKey()); // input data & target  
+      model.feed(vector, entry.getKey()); // input data & target  
   }
 }
 ```
@@ -53,7 +53,7 @@ for (int i = 0; i < epochs; i++) {
 ## Predict
 Returns an array of probabilities, whereas you can get the index of the highest probability
 ```java
-double[] prediction = ml.predict(vector);
+double[] prediction = model.predict(vector);
 ```
 
 Example:
