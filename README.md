@@ -1,6 +1,8 @@
 # Shape Network
 An experimental neural network that showcases some of my own architecture. 
 Additionally, this network makes use of sophisticated feature extraction techniques, enabling reliable and precise classifications such as face recognition.
+
+The network performs well with single-class/label training using the cosine similarity measure, which removes the need for weight balancing to provide accurate predictions.
 ## Build Network
 ```java
 ShapingNetwork model = new ShapingNetworkBuilder()
