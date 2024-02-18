@@ -20,9 +20,13 @@ public class AbstractShapingNetwork {
 
   public AbstractShapingNetwork() {}
 
-  protected void initializeLayers(List<ComposedLayer> temp, int input) {
+  public void initializeLayers(List<ComposedLayer> temp, int input) {
     for (ComposedLayer composer : temp)
       layers.add(new PartitionLayer(composer, input));
+  }
+
+  public void initializeLayers(List<Layer> layers) {
+    this.layers.addAll(layers);
   }
 
   /**
